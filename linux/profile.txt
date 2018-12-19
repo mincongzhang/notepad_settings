@@ -1,0 +1,18 @@
+echo "#############################"
+echo "welcome "`whoami`"!"
+echo "#############################"
+
+redColor=$(tput setaf 1)
+greenColor=$(tput setaf 2)
+yellowColor=$(tput setaf 3)
+blueColor=$(tput setaf 4)
+magColor=$(tput setaf 5)
+cyanColor=$(tput setaf 6)
+colorReset=$(tput sgr0)
+
+PS1_TIME='\t'
+PS1_USERNAME='\u'
+PS1_HOST='\h'
+PS1_LOCATION=$PWD
+
+PS1="$PS1_TIME \[$greenColor\]$PS1_USERNAME\[$magColor\] @$PS1_HOST \[$yellowColor\]$PS1_LOCATION \[$colorReset\]: "

@@ -13,6 +13,5 @@ colorReset=$(tput sgr0)
 PS1_TIME='\t'
 PS1_USERNAME='\u'
 PS1_HOST='\h'
-PS1_LOCATION=$PWD
 
-PS1="$PS1_TIME \[$greenColor\]$PS1_USERNAME\[$magColor\] @$PS1_HOST \[$yellowColor\]$PS1_LOCATION \[$colorReset\]: "
+PS1="$PS1_TIME \[$greenColor\]$PS1_USERNAME\[$magColor\] @$PS1_HOST \[$yellowColor\]\$PWD \[$colorReset\]: "

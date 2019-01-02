@@ -14,4 +14,5 @@ PS1_TIME='\t'
 PS1_USERNAME='\u'
 PS1_HOST='\h'
 
-PS1="\[$greenColor\]$PS1_TIME \[$magColor\] $PS1_USERNAME@$PS1_HOST \[$yellowColor\]\$PWD : \[$colorReset\]"
+# `__git_ps1` prints git branch if exists
+PS1="\[$greenColor\]$PS1_TIME \[$magColor\] $PS1_USERNAME@$PS1_HOST \[$yellowColor\]\$PWD\[$cyanColor\]`__git_ps1` \n$ \[$colorReset\]"
